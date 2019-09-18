@@ -4,6 +4,7 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.dtjy.service.TestService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @Author jiangyao
@@ -15,4 +16,10 @@ public class TestController {
 
     @Reference(version = "1.0.0",timeout = 300)
     TestService testService;
+
+    @RequestMapping("t1")
+    @ResponseBody
+    public String test1(){
+        return testService.test();
+    }
 }
