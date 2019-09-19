@@ -5,18 +5,17 @@ import com.dtjy.service.TestService;
 
 /**
  * @Author jiangyao
- * @Date 2019/9/17 11:45
+ * @Date 2019/9/18 10:47
  **/
-@Service(version = "1.0.0",timeout = 3000)
-public class TestServiceImpl implements TestService {
-
+@Service(version = "2.0.0",timeout = 3000)
+public class DemoServiceImpl implements TestService {
     @Override
     public String test() {
-        return "dubbo success";
+        return "test3";
     }
 
     @Override
     public String test1() {
-        return "test1";
+        return "test2";
     }
 }

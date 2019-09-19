@@ -14,12 +14,21 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @RequestMapping("test")
 public class TestController {
 
-    @Reference(version = "1.0.0",timeout = 300)
+    @Reference(version = "1.0.0",timeout = 3000)
     TestService testService;
+
+    @Reference(version = "2.0.0",timeout = 3000)
+    TestService demoService;
 
     @RequestMapping("t1")
     @ResponseBody
     public String test1(){
         return testService.test();
+    }
+
+    @RequestMapping("t2")
+    @ResponseBody
+    public String test2(){
+        return demoService.test1();
     }
 }
