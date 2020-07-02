@@ -21,7 +21,7 @@
 
   <!-- 集中定义依赖版本号 -->
   <properties>
-    <mysql.version>5.1.32</mysql.version>
+    <mysql.version>8.0.16</mysql.version>
     <slf4j.version>1.6.4</slf4j.version>
     <commons-pool2.version>2.0</commons-pool2.version>
     <commons-lang3.version>3.3.2</commons-lang3.version>
