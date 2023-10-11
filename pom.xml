@@ -26,7 +26,7 @@
     <commons-pool2.version>2.0</commons-pool2.version>
     <commons-lang3.version>3.3.2</commons-lang3.version>
     <dubbo.version>2.6.5</dubbo.version>
-    <zookeeper.version>3.4.14</zookeeper.version>
+    <zookeeper.version>3.7.2</zookeeper.version>
     <zkclient.version>0.1</zkclient.version>
     <lombok.service>1.16.6</lombok.service>
     <springboot.dubbo>0.2.1.RELEASE</springboot.dubbo>
